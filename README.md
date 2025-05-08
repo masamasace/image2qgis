@@ -49,10 +49,14 @@ img2gis.get_coordinates()
 img2gis.get_datetime()
 ```
 
-3. 位置情報が存在しない画像の除外（オプション）
+3. 画像の除外（オプション）
 ```python
 # 位置情報が存在しない画像を除外
 img2gis.remove_nongeotagged_image()
+
+# input_dirに存在しない画像を除外
+img2gis.remove_not_contained_image()
+
 ```
 
 4. QGISでの表示
